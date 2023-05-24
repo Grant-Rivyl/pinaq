@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+      }
+    },
+    "serve-notes": {
+      "type": "product-serve-notes",
+      "settings": {
+      }
+    },
+    "cocktails": {
+      "type": "product-cocktails",
+      "settings": {
+      }
+    },
+    "desserts": {
+      "type": "product-desserts",
+      "settings": {
+      }
+    },
+    "other-products": {
+      "type": "product-recommended",
+      "blocks": {
+        "490ab7db-b579-4488-be4a-b26b79cd9a9b": {
+          "type": "recommended-product",
+          "settings": {
+            "product": "rose"
+          }
+        },
+        "6539c121-b6d8-41ce-8b0d-6abfa2b45a94": {
+          "type": "recommended-product",
+          "settings": {
+            "product": "original"
+          }
+        },
+        "e5eb1f17-c7a2-4de4-9cc9-88cb59805d53": {
+          "type": "recommended-product",
+          "settings": {
+            "product": "colada"
+          }
+        },
+        "74bad4cc-095a-4ca0-b1e5-63c61843d841": {
+          "type": "recommended-product",
+          "settings": {
+            "product": "pinaq-blue"
+          }
+        }
+      },
+      "block_order": [
+        "490ab7db-b579-4488-be4a-b26b79cd9a9b",
+        "6539c121-b6d8-41ce-8b0d-6abfa2b45a94",
+        "e5eb1f17-c7a2-4de4-9cc9-88cb59805d53",
+        "74bad4cc-095a-4ca0-b1e5-63c61843d841"
+      ],
+      "settings": {
+      }
+    },
+    "socials": {
+      "type": "product-socials",
+      "settings": {
+        "tw": "https:\/\/twitter.com\/pinaq_official",
+        "fb": "https:\/\/www.facebook.com\/pinaq.liqueur",
+        "ig": "https:\/\/www.instagram.com\/pinaq_liqueur\/",
+        "tktk": "https:\/\/www.tiktok.com\/@pinaq_liqueur"
+      }
+    },
+    "testimonials": {
+      "type": "product-testimonials",
+      "settings": {
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {
+      }
+    },
+    "pf-cf4aa44e": {
+      "type": "pf-cf4aa44e",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "serve-notes",
+    "cocktails",
+    "desserts",
+    "other-products",
+    "socials",
+    "testimonials",
+    "loox-product-reviews-app-section",
+    "pf-cf4aa44e"
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "sections": {
+    "pnq-section-home-hero": {
+      "type": "pnq-section-home-hero",
+      "blocks": {
+        "a75bbf3d-860a-4d77-9dce-adbfd7cc41cc": {
+          "type": "hero-blocks",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pinaq-blue.png"
+          }
+        },
+        "d632e637-9650-4b00-bd4e-b6d21bf6a3c4": {
+          "type": "hero-blocks",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pinaq-white.png"
+          }
+        },
+        "5d7c0d49-c4dd-42c4-9565-d3d015200330": {
+          "type": "hero-blocks",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pinaq-gold.png"
+          }
+        },
+        "d6657f2a-af7c-44a8-91af-14fccbf3467f": {
+          "type": "hero-blocks",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pinaq-pink.png"
+          }
+        }
+      },
+      "block_order": [
+        "a75bbf3d-860a-4d77-9dce-adbfd7cc41cc",
+        "d632e637-9650-4b00-bd4e-b6d21bf6a3c4",
+        "5d7c0d49-c4dd-42c4-9565-d3d015200330",
+        "d6657f2a-af7c-44a8-91af-14fccbf3467f"
+      ],
+      "settings": {
+        "title": "PINAQ",
+        "subtitle": "Good time in a bottle",
+        "buttonText": "GET STARTED",
+        "buttonUrl": "shopify:\/\/pages\/products",
+        "reviewsUrl": "#testimonial"
+      }
+    },
+    "1659681645231b2845": {
+      "type": "pnq-section-brand",
+      "blocks": {
+        "f25a979c-4bce-4470-9bf2-88c3f7ad60e0": {
+          "type": "brand-image",
+          "settings": {
+            "brand_title": "Featured Cocktail",
+            "brand_url": "shopify:\/\/blogs\/cocktails",
+            "image": "shopify:\/\/shop_images\/pinaq-brand-2.jpg"
+          }
+        },
+        "9678d856-4cdc-4328-a49c-8446942c3c1a": {
+          "type": "brand-image",
+          "settings": {
+            "brand_title": "Featured Desserts",
+            "brand_url": "shopify:\/\/blogs\/desserts",
+            "image": "shopify:\/\/shop_images\/pinaq-brand-3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "f25a979c-4bce-4470-9bf2-88c3f7ad60e0",
+        "9678d856-4cdc-4328-a49c-8446942c3c1a"
+      ],
+      "settings": {
+        "title": "THE BRAND",
+        "imageTitle": "",
+        "imageURL": "shopify:\/\/pages\/about",
+        "contentImage": "shopify:\/\/shop_images\/Slider_Image.png",
+        "contentTitle": "HOW IT ALL STARTED",
+        "content": "Piñaq  was born in 2016, when our founders were served cocktails in a peculiar “glass”. With its unique and instantly recognizable shape, Piñaq  is a trailblazer in the liqueur industry. From TikTok to Instagram, we’re VIRAL. Here’s our story…",
+        "read_more_url": "shopify:\/\/pages\/about",
+        "featured_cocktail": "cocktails\/how-to-make-a-original-negroni",
+        "featured_dessert": "cocktails\/cocktail-recipes-2"
+      }
+    },
+    "165968164956880961": {
+      "type": "pnq-section-home-products",
+      "blocks": {
+        "69b68a0a-ead2-4592-901b-227fcb184df3": {
+          "type": "home-products",
+          "settings": {
+            "product": "rose"
+          }
+        },
+        "80ef828b-1f86-473c-92db-c9695b591e97": {
+          "type": "home-products",
+          "settings": {
+            "product": "original"
+          }
+        },
+        "6580b34b-9d85-46ca-b592-6e1d28dd471b": {
+          "type": "home-products",
+          "settings": {
+            "product": "colada"
+          }
+        },
+        "6f451e63-4910-4d37-921f-acba6f092931": {
+          "type": "home-products",
+          "settings": {
+            "product": "pinaq-blue"
+          }
+        }
+      },
+      "block_order": [
+        "69b68a0a-ead2-4592-901b-227fcb184df3",
+        "80ef828b-1f86-473c-92db-c9695b591e97",
+        "6580b34b-9d85-46ca-b592-6e1d28dd471b",
+        "6f451e63-4910-4d37-921f-acba6f092931"
+      ],
+      "settings": {
+        "title": "OUR RANGE"
+      }
+    },
+    "1659681657997c1bbf": {
+      "type": "pnq-section-kickback",
+      "settings": {
+        "sectionTitle": "KICK BACK WITH PINAQ",
+        "contentTitle": "KICK BACK WITH PIÑAQ",
+        "content": "Piñaq is like stepping onto the beach for the first time each summer. It’s the rosy tint to the fun memories with your truest friends. It’s a unique twist on the world’s most infamous drinks. It’s an iconic silhouette and an unforgettable experience. Just pop the Pinaq, kick back and relax.",
+        "buttonText": "GET STARTED",
+        "buttonUrl": "shopify:\/\/pages\/about",
+        "youtubeEmbed": "<iframe src=\"https:\/\/www.youtube.com\/embed\/VDfs9vMhUOo?rel=0&controls=1&autoplay=0&mute=0&start=0\" frameborder=\"0\" style=\"position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\" title=\"Pinaq Rose Liqueur promo\"><\/iframe>"
+      }
+    },
+    "1659681661057a7e4d": {
+      "type": "pnq-section-blog",
+      "settings": {
+        "blog": "blog"
+      }
+    },
+    "1659681669f0cc0f97": {
+      "type": "pnq-section-home-cocktail",
+      "settings": {
+        "sectionTitle": "cocktail recipes",
+        "cocktail-blog": "cocktails"
+      }
+    },
+    "165968167726a05f39": {
+      "type": "pnq-section-testimonials",
+      "blocks": {
+        "1209241a-8e94-4488-b1a0-a86c658200bc": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 8,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "1209241a-8e94-4488-b1a0-a86c658200bc"
+      ],
+      "settings": {
+        "section-id": "testimonial"
+      }
+    },
+    "1659681684b4700515": {
+      "type": "pnq-section-instagram",
+      "settings": {
+        "insta_embed": "<div class=\"taggbox-container\" style=\"width:100%;height:100%;overflow: auto;\">\n<div class=\"taggbox-socialwall\" data-wall-id=\"106917\" view-url=\"https:\/\/app.taggshop.io\/s\/106917\"><\/div>\n<script src=\"https:\/\/app.taggshop.io\/js\/embed.min.js\" type=\"text\/javascript\"><\/script>\n<\/div>"
+      }
+    },
+    "165968168853294fdd": {
+      "type": "pnq-section-tiktok",
+      "settings": {
+        "tiktok_url": "https:\/\/www.tiktok.com\/discover\/pinaq-liquer"
+      }
+    }
+  },
+  "order": [
+    "pnq-section-home-hero",
+    "1659681645231b2845",
+    "165968164956880961",
+    "1659681657997c1bbf",
+    "1659681661057a7e4d",
+    "1659681669f0cc0f97",
+    "165968167726a05f39",
+    "1659681684b4700515",
+    "165968168853294fdd"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "account-login-link": "https:\/\/test-pinaq.account.myshopify.com",
+          "site-logo": "shopify:\/\/shop_images\/pinaq-logo.png",
+          "menu": "main-menu"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "newsletter_text": "Subscribe to our Newsletter",
+          "menu": "footer",
+          "menu1": "footer-menu-2",
+          "menu2": "lower-footer-menu",
+          "twitter": "https:\/\/twitter.com\/pinaq_officialx2",
+          "facebook": "https:\/\/www.facebook.com\/pinaq.liqueurx2",
+          "instagram": "https:\/\/www.instagram.com\/pinaq_liqueur\/x2",
+          "tiktok": "https:\/\/www.tiktok.com\/@pinaq_liqueurx2"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "21474836472147483647": {
+        "type": "shopify:\/\/apps\/fontify-google-custom-fonts\/blocks\/app-embed\/334490e2-2153-4a2e-a452-e90bdeffa3cc",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "63eaeea3-901c-4aa0-9f66-8d6194192d12": {
+        "type": "shopify:\/\/apps\/instagram-feed-story-tiktok\/blocks\/social-widget\/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  }
+}

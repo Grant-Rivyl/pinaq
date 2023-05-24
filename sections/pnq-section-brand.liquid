@@ -1,0 +1,165 @@
+
+      <div class="section-brand">
+        <div class="arc-right-out">
+          <div class="arc-right-in"></div>
+        </div>
+        <div class="padding-vertical">
+          <div class="page-padding">
+            <div class="container-large">
+              <div id="brand" class="wrap-brand">
+                <h2 class="h2-medium">{{ section.settings.title }}</h2>
+                <div class="block-brand-a">
+                  <div id="w-node-_465f4289-be78-7867-d6c1-b220e8f5fd0b-24e4fe69" class="link-box ">
+                    <a data-w-id="465f4289-be78-7867-d6c1-b220e8f5fd0c" href="{{ section.settings.imageURL }}" class="link-brand w-inline-block">
+                      <img src="{{ section.settings.contentImage | img_url: '700x' }}" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" sizes="(max-width: 479px) 100vw, (max-width: 767px) 89vw, (max-width: 991px) 55vw, (max-width: 1439px) 56vw, 767.9971313476562px" srcset="{{ section.settings.contentImage | img_url: '700x' }} 500w, {{ section.settings.contentImage | img_url: '700x' }} 800w, {{ section.settings.contentImage | img_url: '700x' }} 812w" alt="" class="image-brand">
+                    </a>
+                    <div class="box-brand-title">
+                      <h4 class="h4-small caps-all text-align-center">{{ section.settings.imageTitle }}</h4>
+                    </div>
+                  </div>
+                  <div class="box-brand-1-text">
+                    <h3 class="h3-small">{{ section.settings.contentTitle }}</h3>
+                    <p>{{ section.settings.content }}</p>
+                    <a href="{{ section.settings.read_more_url }}" class="link-standard ">READ MORE</a>
+                  </div>
+                </div>
+                <div class="block-brand-b">
+                  {% comment %}
+                  {% for block in section.blocks %}
+                    <div id="w-node-_848f1a74-f1ac-f06f-4c22-6205830d703a-24e4fe69" class="link-box is-home">
+                      <a data-w-id="3b50bb58-7881-ec0c-f0f2-3839c9af79dd" href="{{ block.settings.brand_url }}" class="link-brand w-inline-block">
+                        <img src="{{ block.settings.image | img_url: '700x' }}" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" sizes="(max-width: 479px) 100vw, (max-width: 767px) 89vw, (max-width: 991px) 45vw, (max-width: 1439px) 46vw, 630px" srcset="{{ block.settings.image | img_url: '700x' }} 500w, {{ block.settings.image | img_url: '700x' }} 700w" alt="" class="image-brand">
+                      </a>
+                      <div class="box-brand-title">
+                        <h4 class="h4-small caps-all text-align-center">{{ block.settings.brand_title }}</h4>
+                        <div class="box-brand-text text-size-regular">
+                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi laudantium,
+                        </div>
+                        <a href="#" class="link-standard">READ MORE</a>
+                      </div>
+                    </div>
+                  {% endfor %}
+                  {% endcomment %}
+
+                  
+                    <div id="w-node-_848f1a74-f1ac-f06f-4c22-6205830d703a-24e4fe69" class="link-box is-home">
+                      <a data-w-id="3b50bb58-7881-ec0c-f0f2-3839c9af79dd" href="{{ section.settings.featured_cocktail.url }}" class="link-brand w-inline-block">
+                        <img src="{{ section.settings.featured_cocktail.image.src | img_url: '700x' }}" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" sizes="(max-width: 479px) 100vw, (max-width: 767px) 89vw, (max-width: 991px) 45vw, (max-width: 1439px) 46vw, 630px" srcset="{{ section.settings.featured_cocktail.image.src | img_url: '700x' }} 500w, {{ section.settings.featured_cocktail.image.src | img_url: '700x' }} 700w" alt="" class="image-brand">
+                      </a>
+                      <div class="box-brand-title">
+                        <h4 class="h4-small caps-all">{{ section.settings.featured_cocktail.title }}</h4>
+                        <div class="box-brand-text text-size-regular">
+                          {{ section.settings.featured_cocktail.excerpt }}
+                        </div>
+                        <a href="{{ section.settings.featured_cocktail.url }}" class="link-standard">READ MORE</a>
+                      </div>
+                    </div>
+                  
+                    <div id="w-node-_848f1a74-f1ac-f06f-4c22-6205830d703a-24e4fe69" class="link-box is-home">
+                      <a data-w-id="3b50bb58-7881-ec0c-f0f2-3839c9af79dd" href="{{ section.settings.featured_dessert.url }}" class="link-brand w-inline-block">
+                        <img src="{{ section.settings.featured_dessert.image.src | img_url: '700x' }}" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" sizes="(max-width: 479px) 100vw, (max-width: 767px) 89vw, (max-width: 991px) 45vw, (max-width: 1439px) 46vw, 630px" srcset="{{ section.settings.featured_dessert.image.src | img_url: '700x' }} 500w, {{ section.settings.featured_dessert.image.src | img_url: '700x' }} 700w" alt="" class="image-brand">
+                      </a>
+                      <div class="box-brand-title">
+                        <h4 class="h4-small caps-all">{{ section.settings.featured_dessert.title }}</h4>
+                        <div class="box-brand-text text-size-regular">
+                          {{ section.settings.featured_dessert.excerpt }}
+                        </div>
+                        <a href="{{ section.settings.featured_dessert.url }}" class="link-standard">READ MORE</a>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+{% schema %}
+{
+  "name": "PNQ Brand",
+  "tag": "div",
+  "settings": [
+      {
+          "type": "text",
+          "id": "title",
+          "default": "THE BRAND",
+          "label": "Section Title"
+      },
+      {
+          "type": "text",
+          "id": "imageTitle",
+          "default": "About",
+          "label": "Image Title"
+      },
+      {
+          "type": "url",
+          "id": "imageURL",
+          "label": "Image URL"
+      },
+      {
+          "type": "image_picker",
+          "id": "contentImage",
+          "label": "Content Image"
+      },
+      {
+          "type": "text",
+          "id": "contentTitle",
+          "default": "Heading",
+          "label": "Title"
+      },
+      {
+          "type": "text",
+          "id": "content",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+          "label": "Content"
+      },
+      {
+          "type": "url",
+          "id": "read_more_url",
+          "label": "Read more URL"
+      },
+      {
+        "type": "article",
+        "id": "featured_cocktail",
+        "label":"Featured Cocktail"
+      },
+      {
+        "type": "article",
+        "id": "featured_dessert",
+        "label":"Featured Dessert"
+      }
+  ],
+  "blocks": [{
+      "type": "brand-image",
+      "name": "Brand Image",
+      "limit": 2,
+      "settings": [
+        
+        {
+            "type": "text",
+            "id": "brand_title",
+            "default": "Featured Cocktail",
+            "label": "Item title"
+        },
+        {
+            "type": "url",
+            "id": "brand_url",
+            "label": "Item Url"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Brand Images"
+        }
+      ]
+  }],
+  "presets": [{
+      "name": "PNQ Brand",
+      "category": "Pinaq"
+  }]
+}
+{% endschema %}

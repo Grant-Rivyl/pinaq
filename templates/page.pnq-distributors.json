@@ -1,0 +1,58 @@
+{
+  "sections": {
+    "1659930173dfc8d61a": {
+      "type": "pnq-section-distributors",
+      "blocks": {
+        "63a8e22c-6c62-48ba-91c9-0b2661990059": {
+          "type": "distributors",
+          "settings": {
+            "area": "New York, Florida, Hawaii, Indiana, South Carolina, Michigan, and North Carolina",
+            "distributor-logo": "shopify:\/\/shop_images\/logo.webp",
+            "text": "Distributed by Southern Wine and Glazers.",
+            "dist-url": "https:\/\/www.southernglazers.com\/"
+          }
+        },
+        "d2338f07-fb8a-4577-b5f1-16e8da4ec3ed": {
+          "type": "distributors",
+          "settings": {
+            "area": "Massachusetts",
+            "distributor-logo": "shopify:\/\/shop_images\/MainStreetImportsTrans.png",
+            "text": "Distributed by Main Street Imports.",
+            "dist-url": "https:\/\/www.mainstreetwineimports.com\/"
+          }
+        },
+        "c29deef8-576b-4bea-9402-ca2ece914449": {
+          "type": "distributors",
+          "settings": {
+            "area": "Georgia",
+            "distributor-logo": "shopify:\/\/shop_images\/logo.png",
+            "text": "Distributed by United Distributors.",
+            "dist-url": "https:\/\/udiga.com\/"
+          }
+        },
+        "71b76029-27cb-47dc-966e-a1531f4911de": {
+          "type": "distributors",
+          "settings": {
+            "area": "New Jersey",
+            "distributor-logo": "shopify:\/\/shop_images\/fedway-logo.png",
+            "text": "Distributed by Fedway.",
+            "dist-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "63a8e22c-6c62-48ba-91c9-0b2661990059",
+        "d2338f07-fb8a-4577-b5f1-16e8da4ec3ed",
+        "c29deef8-576b-4bea-9402-ca2ece914449",
+        "71b76029-27cb-47dc-966e-a1531f4911de"
+      ],
+      "settings": {
+        "title": "DISTRIBUTORS",
+        "subtitle": "Our delicious pineapple-inspired liqueur is now available for purchase at select retailers near you. Don't miss out on the fun, get your hands on Piñaq today!"
+      }
+    }
+  },
+  "order": [
+    "1659930173dfc8d61a"
+  ]
+}

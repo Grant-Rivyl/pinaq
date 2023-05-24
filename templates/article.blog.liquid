@@ -1,0 +1,29 @@
+{%- assign headerSnippetPath = "header-pagegradient" -%}{%- assign wfPage = "62d24e8109ffbd5a0981df5c" -%}{%- assign bodyClasses = "" -%}
+
+      <div class="section-blog-post-hero">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="wrap-blog-post-hero-heading">
+              <div class="blog-date">{{ article.published_at | date: '%B %d, %Y' }}</div>
+              <h1 class="heading-blog">{{ article.title }}</h1>
+            </div>
+          </div>
+        </div><img src="{{ article.image | img_url: '1920x' }}" loading="lazy" alt="" class="image-blog-hero">
+        <div class="overlay-gradient-blog"></div>
+      </div>
+      <div class="section-blog-post-body">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-blog-post-body">
+                <div class="rich-text-white w-richtext">
+                  {{ article.content }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate-diamond lower-left opacity-low">
+          <div class="animate-diamond-in lower-left"></div>
+        </div>
+      </div>

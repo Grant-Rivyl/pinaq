@@ -1,0 +1,58 @@
+{% assign if_empty = 0 %}
+{% for article in blogs['desserts'].articles %}
+  {% if article.tags contains product.metafields.udesly.blog_tag %}
+       {% assign if_empty = variable | plus: 1 %}
+  {% endif %}
+{% endfor %}
+{% if if_empty > 0 %}
+      <div class="section-desserts">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-cocktails">
+                <h2 class="h2-medium text-align-center">DESSERTS</h2>
+                <div class="w-dyn-list">
+                  {% if blogs['desserts'].articles %}
+                    <div role="list" class="collection-list-8 w-dyn-items">
+                      {% for article in blogs['desserts'].articles %}
+                        {% if article.tags contains product.metafields.udesly.blog_tag %}
+                          <div role="listitem" class="w-dyn-item">
+                            <a data-w-id="ca8c2d8f-0eca-7028-67b5-12170a3b22f2" href="{{ article.url }}" class="link-product-cocktail w-inline-block"><img src="{{ article.image | img_url: '1300x' }}" loading="lazy" alt="" class="image-12">
+                              <div style="opacity:1" class="block-product-cocktail-name">
+                                <div class="text-size-regular text-color-white text-align-center text-weight-medium"  style="text-transform:capitalize">{{ product.metafields.udesly.blog_tag }}</div>
+                                <div class="text-size-medium text-color-white text-weight-medium" style="text-align:center">{{ article.title }}</div>
+                              </div>
+                            </a>
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  {% else %}
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                  {% endif %}
+                </div>
+                <a href="{{ blogs['desserts'].url }}" class="link-standard">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate-billard middle-left">
+          <div style="width:20%" class="billiard"></div>
+          <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="billiard-ball"></div>
+        </div>
+        <div class="circle-out">
+          <div class="circle-in"></div>
+        </div>
+      </div>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Desserts",
+    "tag": "div",
+    "settings": []
+  }
+{% endschema %}

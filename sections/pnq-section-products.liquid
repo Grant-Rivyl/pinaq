@@ -1,0 +1,105 @@
+<div class="section-products">
+  <div class="panel-white"></div>
+  <div class="wrap-products">
+    <div class="page-padding">
+      <div class="padding-vertical">
+        <div class="container-large">
+
+
+
+
+          {% comment %}
+          <div class="block-products">
+            <h2 class="h2-medium">PRODUCTS</h2>
+            <div class="box-products">
+              <div class="w-dyn-list">
+                <div role="list" class="collection-list w-dyn-items">
+                  {% for product in collections['all-products'].products %}
+                    <div id="item-{{ forloop.index0 }}" role="listitem" class="w-dyn-item product-hover-pineapple">
+                      <div data-w-id="item-{{ forloop.index0 }}" class="card-product">
+                        <div data-w-id="item-{{ forloop.index0 }}" class="box-product-text">
+                          <div class="text-size-regular text-color-purple caps-all">Category</div>
+                          <div class="text-size-large text-color-purple">{{ product.title }}</div>
+                          <div class="text-size-medium text-color-purple">{{ product.price_min | money }}</div>
+                          <a href="{{ product.url }}" class="link-standard margin-top-10">CHOOSE</a>
+                          <a href="{{ product.url }}" class="product-full-item-url w-inline-block"></a>
+                        </div>
+                        <img src="{{ product.featured_image | img_url: '250x' }}" loading="lazy" data-w-id="item-{{ forloop.index0 }}" alt="" class="image-product">
+                        <img src="{{ 'pinaq-outline.png' | asset_url }}" loading="lazy" data-w-id="item-{{ forloop.index0 }}" alt="" class="image-pineapple-outline">
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% comment %}
+                test when the collection is empty
+                <div class="w-dyn-empty">
+                  <div>{{ 't3d503d2b' | t }}</div>
+                </div>
+              {% endcomment %}
+
+              </div>
+            </div>
+          </div>
+          {% endcomment %}
+
+              <div class="wrap-home-products">
+                <h2 class="h2-medium">PRODUCTS</h2>
+                <div class="block-home-products">
+                  <div class="block-home-products-row">
+                    {% for product in collections['all-products'].products %}
+                    
+                    <div id="w-node-_17c18437-f443-84a8-e9b2-6c6fa18a6a2d-0627e6fa" data-w-id="17c18437-f443-84a8-e9b2-6c6fa18a6a23" class="card-product open-top">
+                      <div class="product-split-box">
+                        <img src="{{ product.metafields.udesly.product-top | img_url: '1000x' }}" loading="lazy" style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" sizes="249.99998474121094px" srcset="{{ product.metafields.udesly.product-top | img_url: '1000x' }} 500w, {{ product.metafields.udesly.product-top | img_url: '1000x' }} 630w" alt="" class="product-top">
+                        <img src="{{ product.metafields.udesly.product-bottom | img_url: '1000x' }}" loading="lazy" sizes="249.99998474121094px" srcset="{{ product.metafields.udesly.product-bottom | img_url: '1000x' }} 500w, {{ product.metafields.udesly.product-bottom | img_url: '1000x' }} 630w" alt="" class="product-bottom">
+                        <a href="{{ product.url }}" class="home-product-link"></a>
+                      </div>
+                    </div>
+
+
+                    
+
+                    {% endfor %}
+
+                  </div>
+                  
+                </div>
+              </div>
+
+
+
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="arc-products">
+    <div class="arc-products-in"></div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "PNQ Products Showcase",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "To edit the products showcase add a collection and name it All Products. Make sure that it has the handle all-products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PNQ Products Showcase",
+      "category": "Pinaq"
+    }
+  ]
+}
+{% endschema %}
+
+
+

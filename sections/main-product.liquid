@@ -1,0 +1,124 @@
+{% comment %}
+{%- assign headerSnippetPath = "header-product" -%}{%- assign wfPage = "62d24048a73d900893870c22" -%}{%- assign bodyClasses = "" -%}
+{% endcomment %}
+      <div class="section-product-hero">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-products-hero">
+                <div class="block-products-hero-text">
+                  <h1 class="text-align-center">{{ product.title }}</h1>
+                  <p class="text-color-purple">{{ product.metafields.udesly.description }}</p>
+                  <div data-current="Tab 3" data-easing="ease" data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+                    <div class="tabs-menu w-tab-menu">
+                      <a data-w-tab="Tab 1" class="tab w-inline-block w-tab-link  w--current">
+                        <div>Ingredients</div>
+                      </a>
+                      <a data-w-tab="Tab 2" class="tab w-inline-block w-tab-link">
+                        <div>Alcohol Level</div>
+                      </a>
+                      <a data-w-tab="Tab 3" class="tab w-inline-block w-tab-link">
+                        <div>Cocktails</div>
+                      </a>
+                    </div>
+                    <div class="tabs-content w-tab-content">
+                      <div data-w-tab="Tab 1" class="tab-pane-tab-1 w-tab-pane  w--tab-active">
+                        <div class="rtb-standard w-richtext">
+                            {{ product.description }}
+                        </div>
+                      </div>
+                      <div data-w-tab="Tab 2" class="w-tab-pane">
+                        <div class="text-size-medium text-color-purple text-align-center">
+                            {{ product.metafields.udesly.alcohol-level }}
+                        </div>
+                      </div>
+                      <div data-w-tab="Tab 3" class="tab-pane-tab-3 w-tab-pane">
+                        <div class="w-dyn-list">
+                          {% if blogs['cocktails'].articles %}
+                            <div role="list" class="collection-list-3 w-dyn-items">
+                              {% for article in blogs['cocktails'].articles %}
+                                  {% if article.tags contains product.metafields.udesly.blog_tag %}
+                                    <div role="listitem" class="collection-item w-dyn-item">
+                                      <a href="{{ article.url }}" class="link-cocktail">{{ article.title }}</a>
+                                    </div>
+                                  {% endif %}
+                              {% endfor %}
+                            </div>
+                          {% else %}
+                            <div class="w-dyn-empty">
+                              <div>No items found.</div>
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                  </div>
+                  <div class="box-product-buttons">
+                    <div>
+                      {%- form "product", product, data-node-type: "commerce-add-to-cart-form", class: "w-commerce-commerceaddtocartform default-state" -%}
+
+                        {%- unless product.has_only_default_variant or product.variants.size == 1 -%}
+                            <div data-node-type="add-to-cart-option-list" class="option-list" id="" position-id="737babb1-7434-6a65-a3be-c8581894e350">
+                                {%- for option in product.options_with_values -%}
+                                    <fieldset data-node-type="add-to-cart-option" id="" style="
+                                        {% if product.has_only_default_variant or product.variants.size == 1 %}display: none; {% endif %}">
+                                        <label data-node-type="add-to-cart-option-label" class="options-label">{{ option.name }}</label>
+                                        <select data-node-type="add-to-cart-option-select" class="select-field w-select" id=""  name="{{ "option" | append: forloop.index }}">
+                                            {%- render "product-options", option: option -%}
+                                        </select>
+                                      {% comment %}
+                                        <div data-node-type="add-to-cart-option-pill-group" id="" class="w-commerce-commerceaddtocartoptionpillgroup" aria-label="{{ "option" | append: forloop.index  }}">
+                                            {%- for value in option.values -%}
+                                                <div data-node-type="add-to-cart-option-pill" id="" class="w-commerce-commerceaddtocartoptionpill" data-option-name="{{ value | handle }}">
+                                                    <div data-node-type="block" id="">{{ value }}</div>
+                                                </div>
+                                            {%- endfor -%}
+                                        </div>
+                                      {% endcomment %}
+                                    </fieldset>
+                                {%- endfor -%}
+                            </div>
+                        {%- endunless -%}
+                        <div position-id="dc7cddca-50f1-233b-15f2-e06f165770f9">
+                            {%- assign condition_value = product.type | strip -%}
+                            {%- unless condition_value == "e348fd487d0102946c9179d2a94bb613" -%}
+                                <label for="quantity-d9add0e4950e02cdaee42fc170476fbc" class="text-size-small caps-all text-color-purple">{{ 'tn48bd3755' | t }}</label>
+                            {%- endunless -%}
+                            {%- assign condition_value = product.type | strip -%}
+                            {%- unless condition_value == "e348fd487d0102946c9179d2a94bb613" -%}
+                                <input type="number" pattern="^[0-9]+$" inputmode="numeric" id="quantity-d9add0e4950e02cdaee42fc170476fbc" name="quantity" min="1" class="w-commerce-commerceaddtocartquantityinput quantity" value="1">
+                            {%- endunless -%}
+                        </div>
+
+
+                      
+                        <div class="wrap-button-standard"><input type="submit" style="justify-content: center;" data-node-type="commerce-add-to-cart-button" data-loading-text="Adding to cart..." value="Add to Cart" aria-busy="false" aria-haspopup="dialog" class="w-commerce-commerceaddtocartbutton button-standard"></div>
+                      {%- render "product-variants-data" product: product -%}{%- endform -%}
+                      <div tabindex="0" style="display:none" class="w-commerce-commerceaddtocartoutofstock">
+                        <div>{{ 't7aaa2dac' | t }}</div>
+                      </div>
+                      <div aria-live="assertive" data-node-type="commerce-add-to-cart-error" style="display:none" class="w-commerce-commerceaddtocarterror">
+                        <div data-node-type="commerce-add-to-cart-error" data-w-add-to-cart-quantity-error="Product is not available in this quantity." data-w-add-to-cart-general-error="Something went wrong when adding this item to the cart." data-w-add-to-cart-mixed-cart-error="You can’t purchase another product with a subscription." data-w-add-to-cart-buy-now-error="Something went wrong when trying to purchase this item." data-w-add-to-cart-checkout-disabled-error="Checkout is disabled on this site." data-w-add-to-cart-select-all-options-error="Please select an option in each set.">{{ 'tn1c765d0d' | t }}</div>
+                      </div>
+                    </div>
+                    <div class="wrap-button-standard">
+                      <a href="{{ product.metafields.udesly.drizzly-url }}" target="_blank" class="button-standard drizzly w-button">DRIZZLY SHOP</a>
+                    </div>
+                  </div>
+                </div><img src="{{ product.featured_image | img_url: '340x' }}" loading="lazy" alt="" class="image-13">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate-arc-side huge">
+          <div class="animate-arc-side-in huge"></div>
+        </div>
+      </div>
+
+{% schema %}
+{
+  "name": "Product Information",
+  "tag": "div",
+  "settings": []
+}
+{% endschema %}

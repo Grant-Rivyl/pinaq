@@ -1,0 +1,91 @@
+
+      <div class="section-home-cocktail">
+        
+        <div class="padding-vertical">
+          <div class="wrap-home-cocktail">
+            <h2 class="h2-medium text-align-center">{{ section.settings.sectionTitle }}</h2>
+            <div class="container-large">
+            <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" fs-cmsslider-element="slider">
+              <div class="w-slider-mask">
+                <div class="w-slide"></div>
+                <div class="w-slide"></div>
+              </div>
+              <div class="w-slider-arrow-left left-arrow">
+                <div class="icon w-icon-slider-left"></div>
+              </div>
+              <div class="w-slider-arrow-right right">
+                <div class="icon-2 w-icon-slider-right"></div>
+              </div>
+              <div class="slide-nav w-slider-nav w-shadow w-round"></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-cocktail-collection">
+          <div class="page-padding">
+            <div class="container-large">
+              <div fs-cmsslider-element="list" class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  
+
+                    {% for article in section.settings.cocktail-blog.articles %}
+                        <div role="listitem" class="w-dyn-item">
+                        <div class="card-home-cocktail">
+                            <div class="box-cocktail-text">
+                            <h3 class="h3-small">{{ article.title }}</h3>
+                            <p>{{ article.excerpt }}</p>
+                            <div class="wrap-button-standard">
+                                <a data-w-id="478eff63-ddd3-fbf9-bccd-64b7580b9b37" href="{{ article.url }}" class="button-standard w-button">LEARN MORE</a>
+                            </div>
+                            </div>
+                            <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(9deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(9deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(9deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(9deg) skew(0, 0)" class="box-cocktail-polaroid">
+                                <img src="{{ article.image | img_url: '400x' }}" loading="lazy" alt="" class="image-cocktail-polaroid">
+                            </div>
+                        </div>
+                        </div>
+                    {% endfor %}
+
+                  
+
+                </div>
+                <div class="w-dyn-empty">
+                  <div>{{ 't3d503d2b' | t }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate-circle-grow upper-left"></div>
+        <div style="-webkit-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="animate-arc-side">
+          <div class="animate-arc-side-in"></div>
+        </div>
+      </div>
+
+
+{% schema %}
+{
+  "name": "PNQ Home Cocktail",
+  "tag": "div",
+  "settings": 
+    [
+        {
+        "type": "text",
+        "id": "sectionTitle",
+        "label": "Section Title",
+        "default": "Cocktail Recipes"
+        },
+        {
+          "type": "blog",
+          "id": "cocktail-blog",
+          "info": "Blog to display",
+          "label": "Select blog to display"
+        }
+    ],
+    "presets": [
+      {
+        "name": "PNQ Home Cocktail",
+        "category": "Pinaq"
+      }
+    ]
+}
+{% endschema %}

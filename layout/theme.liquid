@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+{%- assign headerSnippetPath = "header-index" -%}
+{% if template == "index" %}
+  {%- assign wfPage = "640a95b1ba67523267d1d3ea" -%}
+{% endif %}
+{% if template == "page" %}
+  {%- assign wfPage = "6315855b617b3db45f92825b" -%}
+{% endif %}
+{% if template == "page.pnq-about" %}
+  {%- assign wfPage = "640a95b1ba67525568d1d400" -%}
+{% endif %}
+{% if template == "page.pnq-contact" %}
+  {%- assign wfPage = "640a95b1ba675234bbd1d419" -%}
+{% endif %}
+{% if template == "page.pnq-distributors" %}
+  {%- assign wfPage = "640a95b1ba6752ac2fd1d441" -%}
+{% endif %}
+{% if template == "page.pnq-products" %}
+  {%- assign wfPage = "640a95b1ba6752ca51d1d445" -%}
+{% endif %}
+{% if template == "page.pnq-store-locator" %}
+  {%- assign wfPage = "640a95b1ba675208ddd1d447" -%}
+{% endif %}
+{% if template == "page.pnq-contact" %}
+  {%- assign wfPage = "62d64701958cf0b05227988a" -%}
+{% endif %}
+{% if template == "page.submit-cocktail" %}
+  {%- assign wfPage = "62d63e70972bf1c51f707cb5" -%}
+{% endif %}
+{% if template == "product" %}
+  {%- assign wfPage = "640a95b1ba675218ddd1d43f" -%}
+{% endif %}
+{% if template == "blog" %}
+  {%- assign wfPage = "640a95b1ba67523114d1d416" -%}
+{% endif %}
+{% if template == "article" %}
+  {%- assign wfPage = "640a95b1ba67525245d1d42f" -%}
+{% endif %}
+{% if template == "article.blog" %}
+  {%- assign wfPage = "640a95b1ba67525245d1d42f" -%}
+{% endif %}
+{% if template == "article.cocktails" %}
+  {%- assign wfPage = "640a95b1ba675258c3d1d418" -%}
+{% endif %}
+{% if template == "search" %}
+  {%- assign wfPage = "62d5ed39b0cec557e83fda76" -%}
+{% endif %}
+
+<script>
+  console.log("remove these log code on theme.liquid");
+  console.log("Template:                                 {{template}}");
+  console.log("wfPage data:                                 {{ wfPage }}");
+</script>
+
+{%- assign bodyClasses = "" -%}
+
+<html
+  data-wf-page="{{ wfPage }}"
+  data-wf-site="62c630d72597ac0c9bd8a725"
+  lang="{{ request.locale.iso_code }}"
+  data-money-format="{{ shop.money_format | escape }}">
+  <head>{% render 'pagefly-head' %}{%- liquid
+      if headerSnippetPath
+          include headerSnippetPath
+      else
+          render "__default-head"
+      endif
+  -%}
+    {{ content_for_header }}
+    {% if template contains 'customers' %}
+      {{ "shopify_common.js" | shopify_asset_url | script_tag }}
+    {% endif %}
+
+    {% comment %}
+    // Custom css
+    {% endcomment %}
+    {{ 'pnq-custom-css.css' | asset_url | stylesheet_tag }}
+
+
+    {% render 'judgeme_core' %}
+
+    {{ shop.metafields.loox["global_html_head"] }}
+    {% comment %} {% include 'sca.storelocator' %} {% endcomment %}
+  </head>
+  <body class="{{ bodyClasses }} {{ "template-" | append: request.page_type | handle }}">
+    <div class="age-gate-hide" {% if template == "index" %}style="opacity:0"{% endif %}>
+      {% section 'header' %}
+      <div class="page-wrapper">
+        <div class="main-wrapper">
+          {{ content_for_layout }}
+        </div>
+      </div>
+      <div class="particle-animation">
+        <div
+          class="lottie-animation-2"
+          data-w-id="8500edcf-4a46-3897-f8a2-7391552c330a"
+          data-animation-type="lottie"
+          data-src="{{ 'pinaq-animation-copy.json' | asset_url }}"
+          data-loop="1"
+          data-direction="1"
+          data-autoplay="1"
+          data-is-ix2-target="0"
+          data-renderer="svg"
+          data-default-duration="30.030028806881905"
+          data-duration="60"></div>
+      </div>
+      {% section 'footer' %}
+    </div>
+
+    <div
+      id="age-parent"
+      class="age-verif-parent hide"
+      style="display: flex;">
+      <div class="age-popup">
+        <a
+          href="{{ routes.root_url }}"
+          aria-current="page"
+          class="link-block w-inline-block w--current"><img
+            src="{{ 'pinaq-logo.png' | asset_url }}"
+            loading="lazy"
+            alt=""
+            class="image-2"></a>
+        <div id="error-box" class="error-msg">
+          <div class="error-text text-size-regular">You are not old enough to visit this site
+          </div>
+        </div>
+        <h6 class="popup-head">YOU MUST BE 21 TO VIEW AND USE THIS WEBSITE</h6>
+        <div class="popup-button-div">
+          <div class="wrap-button-standard centered">
+            <a
+              href="#"
+              id="over-age"
+              class="button-standard w-button">I AM OVER 21</a>
+          </div>
+          <div class="wrap-button-standard">
+            <a
+              href="#"
+              id="under-age"
+              class="button-standard centered w-button">I AM UNDER 21</a>
+          </div>
+        </div>
+        <div class="popup-terms-text">By entering this site you are agreeing to the
+          <a href="#">Terms of Use</a>
+          and
+          <a href="#">Privacy Policy.</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('#age-parent').hide()
+      $(document).ready(function() {
+        var allowed = sessionStorage.getItem("allowed");
+        if (allowed != 'true') {
+          $('#age-parent').css('display', 'flex')
+          $('#age-parent').fadeIn(500);
+        }
+        if (allowed == 'true') {
+          $('.age-gate-hide').css("opacity", "1");
+        }
+      });
+      $("#over-age").click(function() {
+        $('#age-parent').fadeOut(500)
+        sessionStorage.setItem("allowed", "true");
+        $('body').removeClass('age-gate');
+        $('.age-gate-hide').css("opacity", "1");
+      });
+      $("#under-age").click(function() {
+        $('#error-box').fadeIn(500);
+      });
+    </script>
+
+
+
+    {{ shop.metafields.loox["global_html_body"] }}
+    {% include 'smile-initializer' %}
+
+  </body>
+
+</html>

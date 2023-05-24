@@ -1,0 +1,71 @@
+
+      <div class="section-about-tiles">
+        <img src="{{ section.settings.image-1 | img_url: '950x' }}" loading="lazy" id="w-node-e981c117-6a50-0348-8bcd-911dcd303579-05976bef" srcset="{{ section.settings.image-1 | img_url: '950x' }} 500w, {{ section.settings.image-1 | img_url: '950x' }} 800w, {{ section.settings.image-1 | img_url: '950x' }} 864w" sizes="(max-width: 767px) 100vw, 50vw" alt="" class="image-about-tile">
+        <div id="w-node-_5b2c2efe-4207-e297-5f80-55776bc08238-05976bef" class="wrap-about-tile">
+          <div class="page-padding">
+            <div class="block-about-tile">
+              <h2 class="h2-medium caps-small">{{ section.settings.title-1 }}</h2>
+              <p>{{ section.settings.content-1 }}</p>
+            </div>
+          </div>
+          <div data-w-id="08b9906a-91df-17cc-928e-335e593a94b7" style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="animate-circle-out about">
+            <div class="animate-circle-in"></div>
+          </div>
+        </div>
+        <div class="wrap-about-tile">
+          <div class="page-padding">
+            <div class="block-about-tile">
+              <h2 class="h2-medium caps-small">{{ section.settings.title-2 }} </h2>
+              <p>{{ section.settings.content-2 }}</p>
+            </div>
+          </div>
+        </div>
+        <img src="{{ section.settings.image-2 | img_url: '950x' }}" loading="lazy" id="w-node-_52c74380-26dc-aecc-8eac-9c91131bef52-05976bef" srcset="{{ section.settings.image-2 | img_url: '950x' }} 500w, {{ section.settings.image-2 | img_url: '950x' }}  800w, {{ section.settings.image-2 | img_url: '950x' }}  864w" sizes="(max-width: 767px) 100vw, 50vw" alt="" class="image-about-tile">
+        <div class="animate-diamond about">
+          <div class="animate-diamond-in about"></div>
+        </div>
+      </div>
+
+
+{% schema %}
+{
+	"name": "PNQ About Tiles",
+	"tag": "div",
+	"settings": [{
+			"type": "image_picker",
+			"id": "image-1",
+			"label": "Image 1"
+		},
+		{
+			"type": "text",
+			"id": "title-1",
+			"default": "Heading",
+			"label": "Title 1"
+		},
+		{
+			"type": "text",
+			"id": "content-1",
+			"default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+			"label": "Content 1"
+		},
+		{
+			"type": "image_picker",
+			"id": "image-2",
+			"label": "Image 2"
+		},
+		{
+			"type": "text",
+			"id": "title-2",
+			"default": "Heading",
+			"label": "Title 2"
+		},
+		{
+			"type": "text",
+			"id": "content-2",
+			"default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+			"label": "Content 2"
+		}
+	],
+	"presets": []
+}
+{% endschema %}

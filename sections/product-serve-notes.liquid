@@ -1,0 +1,58 @@
+
+      <div class="section-serve-notes">
+        <div id="w-node-_8c932ce2-0398-6adc-fb6f-546299c69f09-93870c22" class="wrap-serve-text">
+          <div class="page-padding">
+            <div class="padding-vertical">
+              <div class="container-large">
+                <div class="wrap-serve">
+                  <h2 class="h2-medium caps-small">How to serve</h2>
+                  <div class="rtb-purple w-richtext">
+                    {{ product.metafields.udesly.how-to-serve }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="w-node-_7f660c09-b2c8-1123-110a-749d30f95216-93870c22" class="wrap-notes-text">
+          <div class="page-padding">
+            <div class="padding-vertical">
+              <div class="container-large">
+                <div class="wrap-notes">
+                  <h2 class="h2-medium caps-small">Tasting Notes</h2>
+                  <div class="rtb-purple w-richtext">
+                    {{ product.metafields.udesly.tasting-notes }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="w-node-d3a22052-02c8-43b8-9db7-9947e913a5db-93870c22" class="wrap-serve-polaroid">
+          <div id="w-node-_8c637295-df82-2e96-3c49-4b851389c56f-93870c22" class="block-serve-polaroid"><img src="{{ product.metafields.udesly.how-to-serve-image | img_url: '400x' }}" loading="lazy" alt="" class="image-serve-polaroid"></div>
+          <div class="block-circle-line">
+            <div class="circle-small"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div id="w-node-_0cd408b3-d0a6-705c-3dfa-b0211a29110d-93870c22" class="wrap-notes-polaroid">
+          <div id="w-node-d1d5005b-34aa-e6ee-4860-509ae66594a8-93870c22" class="block-notes-polaroid"><img src="{{ product.metafields.udesly.tasting-notes-image | img_url: '400x' }}" loading="lazy" alt="" class="image-notes-polaroid"></div>
+          <div class="block-circle-line right">
+            <div class="circle-small"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Serve Notes",
+  "tag": "div",
+  "settings": []
+}
+{% endschema %}

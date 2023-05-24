@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "1659929442f72e590f": {
+      "type": "pnq-section-cocktail-submit-hero",
+      "settings": {
+        "title": "Write Us",
+        "content": "We are excited to hear from you! Whether you have a question about our products, want to provide feedback, or just say hello, please feel free to contact us.You can reach us by filling out the form below. We aim to respond to all inquiries within 24-48 hours, but please note that response times may be longer during weekends and holidays.We value your feedback and are committed to providing exceptional customer service. Thank you for considering our brand and we look forward to connecting with you!",
+        "success": "Thank you! Your submission has been received!"
+      }
+    }
+  },
+  "order": [
+    "1659929442f72e590f"
+  ]
+}

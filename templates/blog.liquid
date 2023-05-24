@@ -1,0 +1,122 @@
+{%- assign headerSnippetPath = "header-pagegradient" -%}{%- assign wfPage = "62d640926aba1166e937d7eb" -%}{%- assign bodyClasses = "" -%}
+
+
+
+
+
+<div class="section-cocktail">
+    <div class="page-padding">
+      <div class="padding-vertical">
+        <div class="container-large">
+          <div class="wrap-cocktail">
+            <h1 class="text-align-center">{{ blog.title }}</h1>
+
+
+            <div class="block-filters">
+            <form action="/search" class="search w-form" method="get" role="search">
+              <input type="search" class="search-input w-input" maxlength="256" name="q" placeholder="SEARCH" id="search" required=""/>
+              <input type="submit" value="Search" class="search-button w-button" />
+              <input type="hidden" name="type" value="article" />
+            </form>
+              <style>
+                .colada,.Colada {
+                  color:hsla(45.76271186440679, 100.00%, 65.29%, 1.00);border-color:hsla(45.76271186440679, 100.00%, 65.29%, 1.00)
+                }
+                .blue,.Blue {
+                  color:hsla(203.46368715083798, 90.86%, 61.37%, 1.00);border-color:hsla(203.46368715083798, 90.86%, 61.37%, 1.00)
+                }
+                .rose,.Rose {
+                  color:hsla(320.30769230769226, 91.55%, 72.16%, 1.00);border-color:hsla(320.30769230769226, 91.55%, 72.16%, 1.00)
+                }
+              </style>
+              <div class="w-dyn-list">
+                <div role="list" class="collection-list-4 w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a href="{{ blog.url }}" class="link-standard caps-all text-weight-medium">All</a>
+                  </div>
+                  {% for tag in blog.all_tags %}
+                    <div role="listitem" class="w-dyn-item">
+                      {% if tag contains "blue" or tag contains "Blue" %}
+                        {{- tag | link_to_tag: tag |replace: '<a', '<a class="link-standard caps-all text-weight-medium"' }}
+                      {% elsif tag contains "colada" or tag contains "Colada" %}
+                        {{- tag | link_to_tag: tag |replace: '<a', '<a class="link-standard caps-all text-weight-medium"' }}
+                      {% elsif tag contains "rose" or tag contains "Rose" %}
+                        {{- tag | link_to_tag: tag |replace: '<a', '<a class="link-standard caps-all text-weight-medium"' }}
+                      {% else %}
+                        {{- tag | link_to_tag: tag |replace: '<a', '<a class="link-standard caps-all text-weight-medium"' }}
+                      {% endif %}
+                    </div>
+                  {% endfor %}
+
+                </div>
+                <div class="w-dyn-empty" style="display:none">
+                  <div>No items found.</div>
+                </div>
+              </div>
+            </div>
+            {%- paginate blog.articles by 9 -%}
+            <div class="w-dyn-list">
+              <div role="list" class="collection-list-5 w-dyn-items">
+                {%- for article in blog.articles -%}
+                <div role="listitem" class="w-dyn-item">
+                  <a href="{{ article.url }}" class="link-cocktaikl-main w-inline-block"><img src="{{ article.image | img_url: '360x' }}" loading="lazy" alt="" class="image-7">
+                    <h2 class="h2-small">{{ article.title }}</h2>
+                    <div class="text-size-regular">{{ article.excerpt }}</div>
+                  </a>
+                </div>
+                {%- endfor -%} 
+              </div>
+             {% if blog.articles_count < 1 %}
+              <div class="w-dyn-empty">
+                <div>{{ 't3d503d2b' | t }}</div>
+              </div>
+             {% endif %}
+              {%- if paginate.parts.size > 0 -%}
+              <div role="navigation" aria-label="List" class="w-pagination-wrapper pagination">
+                <div class="wrap-button-standard">
+                    {%- if paginate.previous -%}
+                        <a href="{{ paginate.previous.url }}{{ anchor }}" aria-label="Previous Page" class="w-pagination-previous button-standard"><svg class="w-pagination-previous-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)">
+                            <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M8 10L4 6l4-4"></path>
+                            </svg>
+                            <div class="w-inline-block">PREVIOUS</div>
+                        </a>
+                    {%- endif -%}
+                    {%- if paginate.next -%}
+                        <a href="{{ paginate.next.url }}{{ anchor }}" aria-label="Next Page" class="w-pagination-next button-standard">
+                            <div class="w-inline-block">NEXT</div><svg class="w-pagination-next-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)">
+                            <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M4 2l4 4-4 4"></path>
+                            </svg>
+                        </a>
+                    {%- endif -%}
+                </div>
+              </div>
+              {%- endif -%}
+
+            </div>
+            {%- endpaginate -%}
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-white-large"></div>
+    <div class="animate-circle-grow small lower-right"></div>
+    <div class="animate-circle-grow small top-right"></div>
+    <div class="animate-circle-grow middle-left"></div>
+    <div class="animate-diamond lower-left">
+      <div class="animate-diamond-in lower-left"></div>
+    </div>
+    <div class="animate-arc-side-right">
+      <div class="animate-arc-side-left-in"></div>
+    </div>
+  </div>
+
+<script>
+[...document.body.childNodes].filter(n=>n.nodeType === Node.TEXT_NODE)
+    .forEach(n=>{
+        const wrapper = document.createElement('span');
+        wrapper.style.cssText = "display: none; color: transparent";
+        n.replaceWith(wrapper);
+        wrapper.append(n);
+    });
+</script>

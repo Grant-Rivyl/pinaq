@@ -1,0 +1,64 @@
+
+
+
+{%- assign headerSnippetPath = "header-pagegradient" -%}{%- assign wfPage = "62d5ed39b0cec557e83fda76" -%}{%- assign
+bodyClasses = "" -%}
+<div class="section-cocktail">
+  <div class="page-padding">
+    <div class="padding-vertical">
+      <div class="container-large">
+        <div class="wrap-cocktail">
+          <h1>SEARCH RESULTS</h1>
+          <div class="block-filters">
+            <form action="/search" class="search w-form" method="get" role="search">
+              <input type="search" class="search-input w-input" maxlength="256" name="q" placeholder="SEARCH"
+                id="search" required="" />
+              <input type="submit" value="Search" class="search-button w-button" />
+              <input type="hidden" name="type" value="article" />
+            </form>
+          </div>
+         
+            <div class="w-dyn-list">
+              <div role="list" class="collection-list-5 w-dyn-items">
+                {% for item in search.results %}
+                  {% case item.object_type %}
+                    {% when 'article' %}
+                      <div role="listitem" class="w-dyn-item">
+                        <a href="{{ item.url }}" class="link-cocktaikl-main w-inline-block"><img
+                            src="{{ item.image | img_url: '360x' }}" loading="lazy" alt="" class="image-7">
+                          <h2 class="h2-small">{{ item.title }}</h2>
+                          <div class="text-size-regular">{{ item.excerpt }}</div>
+                        </a>
+                      </div>
+                    {% when 'product' %}
+                      <div>No product card template</div>
+                    {% when 'page' %}
+                      <div>No page card template</div>
+                  {% endcase %}
+                {% endfor %}
+              </div>
+              {% if  search.results.size == 0 %} 
+                <div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+              {% endif %}
+            </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

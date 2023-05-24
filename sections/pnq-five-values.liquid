@@ -1,0 +1,70 @@
+
+
+      <div class="section-five-values">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="wrap-five-values">
+
+
+               {% for block in section.blocks %}
+                <div class="five-values-item {% if forloop.last %}last{% endif %}">
+                  <div class="five-values-image-wrapper"><img src="{{ block.settings.image | img_url: '200x' }}" loading="lazy" alt="" class="five-values-image"></div>
+                  <div class="five-values-content">
+                    <h3 class="five-values-heading">{{ block.settings.title }}</h3>
+                    <div class="five-values-text text-size-large">{{ block.settings.content }}</div>
+                  </div>
+                </div>
+               {% endfor %}
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+{% schema %}
+  {
+    "name": "PNQ Five Values",
+    "tag": "div",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "five-values",
+        "name": "Five Values",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label":"Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "default": "Inclusive",
+            "label":"Title"
+          },
+          {
+            "type": "text",
+            "id": "content",
+            "default": "Piñaq is for every taste, every adult, every gender and every definition of fun!",
+            "label":"Content"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+        "name": "PNQ Five Values",
+        "category": "Pinaq"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

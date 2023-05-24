@@ -1,0 +1,28 @@
+    {%- assign headerSnippetPath = "header-index" -%}{%- assign wfPage = section.settings.code -%}{%- assign bodyClasses = "" -%}
+
+{% schema %}
+{
+  "name": "Liquid Code",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "radio",
+      "id": "code",
+      "label": "Shopify wfPage code",
+      "options": [
+        {
+          "value": "62ce21fff7b515d424e4fe69",
+          "label": "Home Page"
+        }
+      ],
+      "default": "62ce21fff7b515d424e4fe69"
+    }
+  ],
+    "presets": [
+      {
+        "name": "Liquid Code",
+        "category": "Pinaq"
+      }
+    ]
+}
+{% endschema %}

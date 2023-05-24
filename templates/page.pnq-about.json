@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "16596835707866b8ed": {
+      "type": "pnq-section-about-hero",
+      "settings": {
+        "title": "The Story of Pinaq",
+        "subtitle": "Inspired by the picturesque pineapple",
+        "image": "shopify:\/\/shop_images\/Team_Activ_Image.png"
+      }
+    },
+    "16596835796eba8628": {
+      "type": "pnq-section-about-tiles",
+      "settings": {
+        "image-1": "shopify:\/\/shop_images\/Background_Color_1.png",
+        "title-1": " How it all started",
+        "content-1": "Picture this: a trip to the Caribbean in 2016. Tasty fruit cocktails on a stretch of beach that seems to go on forever. The best company in the world at your side. The iconic silhouette of the pina colada and the unforgettable experience of being on holiday in such a beautiful tropical location are two things our founders wanted to capture and cherish forever.",
+        "image-2": "shopify:\/\/shop_images\/Background_Color.png",
+        "title-2": "Enter Pinaq",
+        "content-2": "The pineapple-shaped trailblazer, brought to life by founders Marina & Gabriel, set out to challenge the alcohol industry by adding a fun and unique twist to the world’s most well-known drinks. Pinaq is a liqueur ready to be enjoyed by everyone, even those who don’t like the taste of alcohol. It’s just that good. <br><br>When you think of Pinaq, when you take that first sip, when you see the pineapple, we want you to think of the first time you step onto the beach each summer. We want you to remember the happiest memories with your truest friends. Pinaq is along for the ride as you create more memories, with a tropical cocktail in hand."
+      }
+    },
+    "165968358832d4a11a": {
+      "type": "pnq-section-team",
+      "disabled": true,
+      "blocks": {
+        "e84a2fc4-d2a4-43d2-943e-42fcbd518c5b": {
+          "type": "about-team",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cocktail-1.jpg",
+            "name": "John Doe",
+            "position": "BARTENDER",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+            "twitter": "https:\/\/www.twtitter.com",
+            "facebook": "https:\/\/www.facebook.com",
+            "instagram": "https:\/\/www.instagram.com"
+          }
+        }
+      },
+      "block_order": [
+        "e84a2fc4-d2a4-43d2-943e-42fcbd518c5b"
+      ],
+      "settings": {
+      }
+    },
+    "e104d0ea-f7ee-4008-a23f-948d89b29d78": {
+      "type": "pnq-five-values",
+      "blocks": {
+        "e382c7be-5929-45de-a85a-100caed097ef": {
+          "type": "five-values",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_83.png",
+            "title": "Inclusive",
+            "content": "Piñaq is for every taste, every adult, every gender and every definition of fun!"
+          }
+        },
+        "bf2e9c06-c4f4-4745-bbbb-a3735ca036c8": {
+          "type": "five-values",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_81.png",
+            "title": "Playful",
+            "content": "Our team and our customers know how to have a good time. We are here to have fun!"
+          }
+        },
+        "7d2eceb5-e95b-4503-8848-8ae6f6927f2a": {
+          "type": "five-values",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_87.png",
+            "title": "Diverse",
+            "content": "Our customers are fun-loving people with wide friendship circles who love entertaining."
+          }
+        },
+        "e8901b37-97df-4643-954e-5a9b894b63d4": {
+          "type": "five-values",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_90.png",
+            "title": "Audacious",
+            "content": "We are about having the courage to step outside your comfort zone into adventure town."
+          }
+        },
+        "d94b7573-0c5e-4fb4-bbbd-389e721b6a27": {
+          "type": "five-values",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_93.png",
+            "title": "Influential",
+            "content": "We are for the entertainers, those that love throwing a party and introducing them to new tastes."
+          }
+        }
+      },
+      "block_order": [
+        "e382c7be-5929-45de-a85a-100caed097ef",
+        "bf2e9c06-c4f4-4745-bbbb-a3735ca036c8",
+        "7d2eceb5-e95b-4503-8848-8ae6f6927f2a",
+        "e8901b37-97df-4643-954e-5a9b894b63d4",
+        "d94b7573-0c5e-4fb4-bbbd-389e721b6a27"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "16596835707866b8ed",
+    "16596835796eba8628",
+    "165968358832d4a11a",
+    "e104d0ea-f7ee-4008-a23f-948d89b29d78"
+  ]
+}

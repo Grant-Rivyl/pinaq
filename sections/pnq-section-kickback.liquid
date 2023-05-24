@@ -1,0 +1,79 @@
+<div class="section-kickback">
+  <div class="page-padding">
+    <div class="padding-vertical">
+      <div class="container-large">
+        <div class="wrap-kickback">
+          {% comment %}<h2 class="h2-medium text-align-center">{{ section.settings.sectionTitle }}</h2>{% endcomment %}
+          <div class="block-kickback">
+            <div class="box-kickback-video">
+              <div style="padding-top:56.17021276595745%" class="w-embed-youtubevideo youtube">
+                {{ section.settings.youtubeEmbed }}    
+              </div>
+            </div>
+            <div class="box-kickback-text">
+              <h3 class="h3-small">{{ section.settings.contentTitle }}</h3>
+              <p>{{ section.settings.content }}</p>
+              <div class="wrap-button-standard">
+                <a href="{{ section.settings.buttonUrl }}" class="button-standard w-button">{{ section.settings.buttonText }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="animate-circle-grow kick-back"></div>
+</div>
+    
+    
+
+  
+      
+  {% schema %}
+  {
+  "name": "PNQ Kickback",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sectionTitle",
+      "default": "KICK BACK WITH PINAQ",
+      "label": "Section Title"
+    },
+    {
+      "type": "text",
+      "id": "contentTitle",
+      "default": "Heading",
+      "label": "Content Title"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+      "label": "Content"
+    },
+    {
+      "type": "text",
+      "id": "buttonText",
+      "default": "GET STARTED",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "buttonUrl",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "youtubeEmbed",
+      "label": "Youtube Embed"
+    }
+  ],
+    "presets": [
+      {
+        "name": "PNQ Kickback",
+        "category": "Pinaq"
+      }
+    ]
+  }
+  {% endschema %}

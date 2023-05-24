@@ -1,0 +1,69 @@
+
+      <div class="section-cocktail-submit-hero">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-cocktail-submit-hero">
+                <div class="block-cocktail-submit-heading">
+                  <h1>{{ section.settings.title }}</h1>
+                  <p>{{ section.settings.content }}</p>
+                </div>
+                <div class="block-cocktail-form">
+                  <div class="w-form">
+                    {%- form "contact",  class: "form" -%}<input type="text" class="field-standard w-input" maxlength="256" name="contact[name]" data-name="Name" placeholder="Name" id="name" required=""><input type="email" class="field-standard w-input" maxlength="256" name="contact[email]" data-name="Email" placeholder="Email" id="email" required=""><textarea placeholder="Story" maxlength="5000" id="Story" name="contact[story]" required="" data-name="Story" class="textarea w-input"></textarea>
+                      <div class="wrap-button-standard"><input type="submit" value="Submit" data-wait="Please wait..." class="button-standard w-button"></div>
+                    {%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}{%- endform -%}
+                    <div class="w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
+                      <div>{{ section.settings.success }}</div>
+                    </div>
+                    {%- unless form_success -%}<div class="w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
+                      <div>{%- render "form-errors", form_errors: form_errors -%}</div>
+                    </div>{%- endunless -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-white-large"></div>
+        <div class="animate-circle-grow small lower-right"></div>
+        <div class="animate-circle-grow small top-right"></div>
+        <div class="animate-circle-grow middle-left"></div>
+      </div>
+
+
+
+
+
+{% schema %}
+{
+  "name": "PNQ Contact",
+  "tag": "div",
+  "settings": [
+    {
+      "type":"text",
+      "label":"Contact Title",
+      "default":"Write Us",
+      "id":"title"
+    },
+    {
+      "type":"text",
+      "label":"Contact Content",
+      "default":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+      "id":"content"
+    },
+    {
+      "type":"text",
+      "label":"Submission Successful Text",
+      "default":"Thank you! Your submission has been received!",
+      "id":"success"
+    }
+  ],
+    "presets": [
+      {
+        "name": "PNQ Contact",
+        "category": "Pinaq"
+      }
+    ]
+}
+{% endschema %}

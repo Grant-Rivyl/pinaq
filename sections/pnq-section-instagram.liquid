@@ -1,0 +1,30 @@
+
+      <div class="section-instagram">
+        <div class="padding-vertical">
+            <div class="wrap-instagram">
+                <h2 class="h2-medium">INSTAGRAM</h2>
+                {{ section.settings.insta_embed }}
+             </div>
+       </div>
+
+      </div>{% schema %}
+{
+  "name": "PNQ Instagram",
+  "tag": "div",
+  "settings": [
+    {
+      "type":"text",
+      "id":"insta_embed",
+      "label":"Instagram Embed Code"
+    }
+  ],
+    "presets": [
+      {
+        "name": "PNQ Instagram",
+        "category": "Pinaq"
+      }
+    ]
+}
+{% endschema %}
+
+      

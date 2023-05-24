@@ -1,0 +1,47 @@
+
+      <div class="section-tiktok">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-tiktok">
+                <div class="block-pinaq-phone">
+                  <div class="box-pinaq-phone">
+                    <div class="pinaq-phone-frame"></div>
+                    <div class="pinaq-phone-content"><img src="{{ 'pinaq-tiktok.jpg' | asset_url }}" loading="lazy" data-w-id="9cd0876f-2ba0-3b88-9eb9-2b313f271772" alt=""></div>
+                  </div>
+                  <div data-w-id="cffce2be-7f4f-3c67-8233-79d0aa6ad90c" class="box-tiktok-text">
+                      <a href="{{ section.settings.tiktok_url }}" target="_blank" class="link-block-3 w-inline-block"><img src="{{ 'tiktok-heart.png' | asset_url }}" loading="lazy" alt="" class="icon-tiktok-heart">
+                      <h2 class="h2-medium text-align-center">FOLLOW US<br>ON TIKTOK</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="animate-circle-grow tiktok"></div>
+        <div class="animate-diamond right">
+          <div class="animate-diamond-in"></div>
+        </div>
+      </div>
+
+
+      {% schema %}
+{
+  "name": "PNQ Tiktok",
+  "tag": "div",
+  "settings": [
+    {
+      "type":"url",
+      "id":"tiktok_url",
+      "label":"Tiktok Url"
+    }
+  ],
+    "presets": [
+      {
+        "name": "PNQ Tiktok",
+        "category": "Pinaq"
+      }
+    ]
+}
+{% endschema %}

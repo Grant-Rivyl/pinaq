@@ -1,0 +1,61 @@
+
+      <div class="section-blog">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-home-blog">
+                <h2 class="h2-medium">BLOG</h2>
+                <div class="block-home-blog">
+                  <div class="w-dyn-list">
+                    {% if section.settings.blog %}
+                      <div role="list" class="collection-list-2 w-dyn-items">
+                          {% for article in section.settings.blog.articles %}
+                              {% if forloop.index0 <= 2 %}
+                                  <div role="listitem" class="w-dyn-item">
+                                      <a href="{{ article.url }}" class="link-block-2 w-inline-block">
+                                      <div class="text-size-regular text-color-purple">{{ article.published_at | date: '%B %d, %Y' }}</div>
+                                      <h3 class="h3-small text-align-center text-weight-normal">{{ article.title }}</h3>
+                                      <img src="{{ article.image | img_url: '340x' }}" loading="lazy" alt="" class="image-4">
+                                      </a>
+                                  </div>
+                              {% endif %}
+                          {% endfor %}
+                      </div>
+                    {% else %}
+                      <div class="w-dyn-empty">
+                        <div>{{ 't3d503d2b' | t }}</div>
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="wrap-button-standard">
+                  <a href="{{ section.settings.blog.url }}" class="button-standard w-button">ALL POSTS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+{% schema %}
+{
+  "name": "PNQ Blog",
+  "tag": "div",
+  "settings": [
+      {
+        "type": "blog",
+        "id": "blog",
+        "info": "Blog to display",
+        "label": "Select blog to display"
+      }
+  ],
+    "presets": [
+      {
+        "name": "PNQ Blog",
+        "category": "Pinaq"
+      }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,62 @@
+{%- assign headerSnippetPath = "header-pagegradient" -%}{%- assign wfPage = "62d49bed5d3ddb9505976bef" -%}{%- assign bodyClasses = "" -%}
+{% comment %}
+######################
+The animation is attached to wfPage variable for some reason
+######################
+{% endcomment %}
+      <div class="section-about-hero">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-about-hero">
+                <div class="block-about-heading">
+                  <h1>{{ section.settings.title }}</h1>
+                  <p>{{ section.settings.subtitle }}</p>
+                </div>
+                <div data-w-id="fc3ae877-31f1-48b7-4f31-ced6f025aaef" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(9deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(9deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(9deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(9deg) skew(0, 0)" class="block-about-polaroid">
+                  <img src="{{ section.settings.image | img_url: '350x' }}" loading="lazy" srcset="{{ section.settings.image | img_url: '350x' }} 500w, {{ section.settings.image | img_url: '350x' }} 700w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 286.03070068359375px, (max-width: 1919px) 400.4429931640625px, 21vw" alt="" class="image-about-cocktail-polaroid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-white-large"></div>
+        <div class="animate-billard">
+          <div style="width:20%" class="billiard"></div>
+          <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="billiard-ball"></div>
+        </div>
+      </div>
+
+{% schema %}
+{
+  "name": "PNQ About Hero",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "ABOUT US",
+      "label": "Hero Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      "label": "Hero Subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hero Image"
+    }
+  ],
+    "presets": [
+      {
+        "name": "PNQ About Hero",
+        "category": "Pinaq"
+      }
+    ]
+}
+{% endschema %}
+
+

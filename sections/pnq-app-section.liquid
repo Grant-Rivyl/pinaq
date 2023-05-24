@@ -1,0 +1,48 @@
+
+      <div class="section-testimonials">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-testimonials">
+                <h2 class="h2-medium">{{ section.settings.title }}</h2>
+                <div class="app-wrapper">
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when '@app' %}
+                        {% render block %}
+                    {% endcase %}
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate-circle-grow lower-left"></div>
+      </div>
+
+
+{% schema %}
+{
+  "name": "PNQ App Section",
+  "tag": "div",
+  "settings": [
+    {
+      "type":"text",
+      "id":"title",
+      "label":"title",
+      "default":"Section Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+    "presets": [
+      {
+        "name": "PNQ App Section",
+        "category": "Pinaq"
+      }
+    ]
+}
+{% endschema %}

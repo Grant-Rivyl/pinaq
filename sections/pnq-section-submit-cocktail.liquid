@@ -1,0 +1,96 @@
+
+      <div class="section-cocktail-submit-hero">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-cocktail-submit-hero">
+                <div class="block-cocktail-submit-heading">
+                  <h1>Cocktail<br>Recipes</h1>
+                  <p>
+                    We are always looking for new and exciting cocktail recipes to share with our community. If you have a recipe that you would like to submit, please fill out the form below.
+                  To submit a recipe, please provide the following information:
+                  </p>
+                  <ul>
+                    <li>The name of the cocktail</li>
+                    <li>A list of ingredients, including measurements</li>
+                    <li>Step-by-step instructions for how to make the cocktail</li>
+                  </ul>
+                  <p>
+                    Please note that by submitting a recipe, you grant us permission to publish the recipe on our website and social media channels.
+                    Thank you for your contribution and we can't wait to try out your delicious cocktail recipe!
+                  </p>
+                  <p>
+                  </p>
+                </div>
+                <div class="block-cocktail-form">
+                  <div class="w-form">
+                    {%- form "contact",  class: "form" -%}<input type="text" class="field-standard w-input" maxlength="256" name="contact[name]" data-name="Name" placeholder="Name" id="name" required=""><input type="email" class="field-standard w-input" maxlength="256" name="contact[email]" data-name="Email" placeholder="Email" id="email" required=""><input type="text" class="field-standard w-input" maxlength="256" name="contact[cocktail_name]" data-name="Cocktail Name" placeholder="Cocktail Name" id="Cocktail-Name" required=""><input type="text" class="field-standard w-input" maxlength="256" name="contact[ingredients]" data-name="Ingredients" placeholder="Ingredients" id="Ingredients" required=""><textarea placeholder="Steps" maxlength="5000" id="Steps" name="contact[steps]" required="" data-name="field" class="textarea w-input"></textarea>
+                      <a href="#" class="link-standard margin-20">{{ 'tn6a2566db' | t }}</a>
+                      <div class="wrap-button-standard"><input type="submit" value="Submit" data-wait="Please wait..." class="button-standard w-button"></div>
+                    {%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}{%- endform -%}
+                    <div class="w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
+                      <div>{{ 't5a0ea5a1' | t }}</div>
+                    </div>
+                    {%- unless form_success -%}<div class="w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
+                      <div>{%- render "form-errors", form_errors: form_errors -%}</div>
+                    </div>{%- endunless -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-white-large"></div>
+        <div class="animate-circle-grow small lower-right"></div>
+        <div class="animate-circle-grow small top-right"></div>
+        <div class="animate-circle-grow middle-left"></div>
+      </div>
+
+  {% schema %}
+  {
+  "name": "PNQ Submit A Cocktail",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sectionTitle",
+      "default": "KICK BACK WITH PINAQ",
+      "label": "Section Title"
+    },
+    {
+      "type": "text",
+      "id": "contentTitle",
+      "default": "Heading",
+      "label": "Content Title"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+      "label": "Content"
+    },
+    {
+      "type": "text",
+      "id": "buttonText",
+      "default": "GET STARTED",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "buttonUrl",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "youtubeEmbed",
+      "label": "Youtube Embed"
+    }
+  ],
+    "presets": [
+      {
+        "name": "PNQ Submit A Cocktail",
+        "category": "Pinaq"
+      }
+    ]
+  }
+  {% endschema %}

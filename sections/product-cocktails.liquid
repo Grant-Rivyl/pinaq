@@ -1,0 +1,44 @@
+
+      <div class="section-cocktails">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-cocktails">
+                <h2 class="h2-medium text-align-center">COCKTAILS</h2>
+                <div class="w-dyn-list">
+                  {% if blogs['cocktails'].articles %}
+                    <div role="list" class="collection-list-8 w-dyn-items">
+                      {% for article in blogs['cocktails'].articles %}
+                          {% if article.tags contains product.metafields.udesly.blog_tag %}
+                            <div role="listitem" class="w-dyn-item">
+                              <a href="{{ article.url }}" class="link-product-cocktail w-inline-block"><img src="{{ article.image | img_url: '1300x' }}" loading="lazy" alt="" class="image-12">
+                                <div style="opacity:1" class="block-product-cocktail-name">
+                                  <div class="text-size-regular text-color-white text-align-center text-weight-medium" style="text-transform:capitalize">{{ product.metafields.udesly.blog_tag }}</div>
+                                  <div class="text-size-medium text-color-white text-weight-medium  text-align-center " style="padding:0 20px;">{{ article.title }}</div>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                      {% endfor %}
+                    </div>
+                  {% else %}  
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                  {% endif %}
+                </div>
+                <a href="{{ blogs['cocktails'].url }}" class="link-standard">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+{% schema %}
+  {
+    "name": "Cocktails",
+    "tag": "div",
+    "settings": []
+  }
+{% endschema %}

@@ -1,0 +1,45 @@
+
+      <div class="section-testimonials" id="{{ section.settings.section-id }}">
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-testimonials">
+                <h2 class="h2-medium">Testimonials</h2>
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when '@app' %}
+                        {% render block %}
+                    {% endcase %}
+                  {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate-circle-grow lower-left"></div>
+      </div>
+
+
+{% schema %}
+{
+  "name": "PNQ Testimonials",
+  "tag": "div",
+  "settings": [
+      {
+          "type": "text",
+          "id": "section-id",
+          "label": "Section ID"
+      }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+    "presets": [
+      {
+        "name": "PNQ Testimonials",
+        "category": "Pinaq"
+      }
+    ]
+}
+{% endschema %}

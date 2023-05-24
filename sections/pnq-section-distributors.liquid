@@ -1,0 +1,112 @@
+
+      <div class="section-distributors">
+        <div class="animate-billard distributors">
+          <div style="width:20%" class="billiard"></div>
+          <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="billiard-ball"></div>
+        </div>
+        <div class="page-padding">
+          <div class="padding-vertical">
+            <div class="container-large">
+              <div class="wrap-distributors">
+                <div class="block-distributors-heading">
+                  <h1 class="h1-small">{{ section.settings.title }}</h1>
+                  <p>
+                    {{ section.settings.subtitle }}
+                  </p>
+                </div><img src="{{ section.settings.subtitle | img_url: '400x' }}" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 991px) 45vw, 399.078125px" srcset="{{ 'pinaq-hands-beach-p-500.jpg' | asset_url }} 500w, {{ 'pinaq-hands-beach.jpg' | asset_url }} 700w" alt="" class="image-10">
+                <div id="w-node-_8b863ac8-5714-6b5b-0a49-975b254731ef-a0d221d5" class="block-distributors-list">
+                
+                    {% for block in section.blocks %}
+                        <div data-hover="false" data-delay="0" data-w-id="f3485363-bf15-851c-835e-f910b05ebb1d" style="height:80px" class="accordion-item w-dropdown">
+                            <div class="accordion-toggle w-dropdown-toggle">
+                                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordion-icon w-icon-dropdown-toggle"></div>
+                                <div class="text-block-10">{{ block.settings.area }}</div>
+                            </div>
+                            <nav class="dropdown-list w-dropdown-list"><img src=" {{ block.settings.distributor-logo | img_url: 'x85' }}" loading="lazy" alt="" class="image-14">
+                                <p class="paragraph">{{ block.settings.text }}<br></p>
+                                <div class="button-wrapper">
+                                <a href="{{ block.settings.dist-url }}" target="_blank" class="button-standard w-button">VISIT THEIR WEBSITE</a>
+                                </div>
+                            </nav>
+                        </div>
+                    {% endfor %}
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-white-large"></div>
+        <div class="animate-arc-side distributors">
+          <div class="animate-arc-side-in"></div>
+        </div>
+      </div>
+
+
+
+
+
+
+      
+{% schema %}
+{
+    "name": "PNQ Distributors",
+    "tag": "div",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "default": "DISTRIBUTORS",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+            "label": "Description"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "distributors",
+            "name": "Item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "area",
+                    "default": "Massachusetts",
+                    "label": "Toggle Title"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "distributor-logo",
+                    "label": "Distributor Logo"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "default": "Distributed by Main Street Imports.",
+                    "label": "Distributor Description"
+                },
+                {
+                    "type": "url",
+                    "id": "dist-url",
+                    "label": "Distributor Site"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "PNQ Distributors",
+            "category": "Pinaq"
+        }
+    ]
+}
+{% endschema %}

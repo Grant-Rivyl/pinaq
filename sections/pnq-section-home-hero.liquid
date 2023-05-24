@@ -1,0 +1,103 @@
+{%- assign headerSnippetPath = "header-index" -%}{%- assign wfPage = "62ce21fff7b515d424e4fe69" -%}{%- assign bodyClasses = "" -%}
+{% comment %}
+######################
+The animation is attached to wfPage variable for some reason
+######################
+{% endcomment %}
+      <a href="{{ section.settings.reviewsUrl }}" class="button-reviews w-button">REVIEWS</a>
+      <div class="section-home-hero">
+        <div class="panel-white">
+          <div class="wrap-hero-heading">
+            <div class="block-hero-heading">
+              <div class="page-padding">
+                <div class="padding-vertical">
+                  <div class="box-hero-heading">
+                    <h1 class="h1-home">{{ section.settings.title }}</h1>
+                    <div class="text-size-regular">{{ section.settings.subtitle }}</div>
+                    <div class="wrap-button-standard">
+                      <a href="{{ section.settings.buttonUrl }}" class="button-standard w-button">{{ section.settings.buttonText }}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="wrap-pill">
+            <div class="shape-pill-out"></div>
+            <div class="shape-pill-in"></div>
+          </div>
+        </div>
+        <div class="wrap-hero-pineapples">
+          <div id="w-node-_01ad3dae-4fc2-cad6-795b-41773122aed4-24e4fe69" class="page-padding">
+            <div class="grid-hero-pineapples">
+                {% for block in section.blocks %}
+                    <img src="{{ block.settings.image | img_url: '340x' }}" loading="lazy" id="w-node-f4a4dfe8-0b5b-7cd4-f2a1-0ea501fd848f-24e4fe69" alt="" class="pineapple-blue">
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="animate-circle-grow"></div>
+        <div class="animate-billard">
+          <div style="width:20%" class="billiard"></div>
+          <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.4, 0.4, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="billiard-ball"></div>
+        </div>
+      </div>
+        
+{% schema %}
+{
+  "name": "PNQ Home Hero",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "PINAQ",
+      "label": "Title"
+      
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "default": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum.",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "buttonText",
+      "default": "GET STARTED",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "buttonUrl",
+      "label": "Button URL"
+    },
+    {
+      "type": "url",
+      "id": "reviewsUrl",
+      "label": "Reviews URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "hero-blocks",
+      "name": "Product Images",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Product Image"
+        }
+      ]
+    }
+  ],
+    "presets": [
+      {
+        "name": "PNQ Home Hero",
+        "category": "Pinaq"
+      }
+    ]
+}
+{% endschema %}

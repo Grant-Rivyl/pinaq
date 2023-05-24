@@ -1,0 +1,553 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "pinaq",
+    "theme_author": "Udesly User",
+    "theme_version": "1.0.0",
+    "theme_documentation_url": "https:\/\/www.domain.tld",
+    "theme_support_email": "support@email.com"
+  },
+  {
+    "name": "Seo Settings",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon Image",
+        "info": "Will be scaled down to 32x32px"
+      },
+      {
+        "type": "image_picker",
+        "id": "apple_touch_icon",
+        "label": "Apple touch icon image",
+        "info": "Will be scaled down to 120x120px"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_product_rich_snippets",
+        "label": "Enable Product Rich Snippets",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_article_rich_snippets",
+        "label": "Enable Article Rich Snippets",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Colors Settings",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_21d1ff8",
+        "label": "Color 21d1ff8",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_2052b6b",
+        "label": "Color 2052b6b",
+        "default": "#333"
+      },
+      {
+        "type": "color",
+        "id": "color_20740f16",
+        "label": "Color 20740f16",
+        "default": "#3898EC"
+      },
+      {
+        "type": "color",
+        "id": "color_14dd0d27",
+        "label": "Color 14dd0d27",
+        "default": "#AAADB0"
+      },
+      {
+        "type": "color",
+        "id": "color_n665baccb",
+        "label": "Color n665baccb",
+        "default": "rgba(0, 0, 0, 0.1)"
+      },
+      {
+        "type": "color",
+        "id": "color_n30f27c4f",
+        "label": "Color n30f27c4f",
+        "default": "#E2E2E2"
+      },
+      {
+        "type": "color",
+        "id": "color_n71f2f2c8",
+        "label": "Color n71f2f2c8",
+        "default": "#dddddd"
+      },
+      {
+        "type": "color",
+        "id": "color_n4bc568a",
+        "label": "Color n4bc568a",
+        "default": "#ffdede"
+      },
+      {
+        "type": "color",
+        "id": "color_1794bb98",
+        "label": "Color 1794bb98",
+        "default": "#333333"
+      },
+      {
+        "type": "color",
+        "id": "color_n49fab88",
+        "label": "Color n49fab88",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_57636998",
+        "label": "Color 57636998",
+        "default": "#cccccc"
+      },
+      {
+        "type": "color",
+        "id": "color_207fce5",
+        "label": "Color 207fce5",
+        "default": "#999"
+      },
+      {
+        "type": "color",
+        "id": "color_n3b494f28",
+        "label": "Color n3b494f28",
+        "default": "#eeeeee"
+      },
+      {
+        "type": "color",
+        "id": "color_n5bbe084f",
+        "label": "Color n5bbe084f",
+        "default": "#f3f3f3"
+      },
+      {
+        "type": "color",
+        "id": "color_nd2a2d19",
+        "label": "Color nd2a2d19",
+        "default": "#fafafa"
+      },
+      {
+        "type": "color",
+        "id": "color_n44f275b8",
+        "label": "Color n44f275b8",
+        "default": "#ea384c"
+      },
+      {
+        "type": "color",
+        "id": "color_n1120bca1",
+        "label": "Color n1120bca1",
+        "default": "#758696"
+      },
+      {
+        "type": "color",
+        "id": "color_34db5231",
+        "label": "Color 34db5231",
+        "default": "rgba(117, 134, 150, 0)"
+      },
+      {
+        "type": "color",
+        "id": "color_n2ac12a6f",
+        "label": "Color n2ac12a6f",
+        "default": "#5d6c7b"
+      },
+      {
+        "type": "color",
+        "id": "color_7c255c90",
+        "label": "Color 7c255c90",
+        "default": "rgba(255, 255, 255, 0)"
+      },
+      {
+        "type": "color",
+        "id": "color_1755f232",
+        "label": "Color 1755f232",
+        "default": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "type": "color",
+        "id": "color_n4949fe7c",
+        "label": "Color n4949fe7c",
+        "default": "rgba(51, 51, 51, 0.4)"
+      },
+      {
+        "type": "color",
+        "id": "color_3416ad5",
+        "label": "Color 3416ad5",
+        "default": "rgba(34, 34, 34, 0.4)"
+      },
+      {
+        "type": "color",
+        "id": "color_204b32c",
+        "label": "Color 204b32c",
+        "default": "#222"
+      },
+      {
+        "type": "color",
+        "id": "color_842a956",
+        "label": "Color 842a956",
+        "default": "rgba(255, 255, 255, 0.4)"
+      },
+      {
+        "type": "color",
+        "id": "color_n1f14e808",
+        "label": "Color n1f14e808",
+        "default": "#222222"
+      },
+      {
+        "type": "color",
+        "id": "color_740a4091",
+        "label": "Color 740a4091",
+        "default": "#0082f3"
+      },
+      {
+        "type": "color",
+        "id": "color_203c2ae",
+        "label": "Color 203c2ae",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "color_n665b8ec3",
+        "label": "Color n665b8ec3",
+        "default": "rgba(0, 0, 0, 0.9)"
+      },
+      {
+        "type": "color",
+        "id": "color_n665ba188",
+        "label": "Color n665ba188",
+        "default": "rgba(0, 0, 0, 0.4)"
+      },
+      {
+        "type": "color",
+        "id": "color_n14730edb",
+        "label": "Color n14730edb",
+        "default": "#2895f7"
+      },
+      {
+        "type": "color",
+        "id": "color_6f64a559",
+        "label": "Color 6f64a559",
+        "default": "#C8C8C8"
+      },
+      {
+        "type": "color",
+        "id": "color_20748b16",
+        "label": "Color 20748b16",
+        "default": "#3898ec"
+      },
+      {
+        "type": "color",
+        "id": "color_n665b9284",
+        "label": "Color n665b9284",
+        "default": "rgba(0, 0, 0, 0.8)"
+      },
+      {
+        "type": "color",
+        "id": "color_n65194d1d",
+        "label": "Color n65194d1d",
+        "default": "rgba(0, 0, 0, 0.25)"
+      },
+      {
+        "type": "color",
+        "id": "color_746d8885",
+        "label": "Color 746d8885",
+        "default": "#e6e6e6"
+      },
+      {
+        "type": "color",
+        "id": "color_21c2f7a",
+        "label": "Color 21c2f7a",
+        "default": "#ddd"
+      },
+      {
+        "type": "color",
+        "id": "color_2069428",
+        "label": "Color 2069428",
+        "default": "#666"
+      },
+      {
+        "type": "color",
+        "id": "color_n58536e15",
+        "label": "Color n58536e15",
+        "default": "#f5f5f5"
+      },
+      {
+        "type": "color",
+        "id": "color_21bb73b",
+        "label": "Color 21bb73b",
+        "default": "#ccc"
+      },
+      {
+        "type": "color",
+        "id": "color_n1827033a",
+        "label": "Color n1827033a",
+        "default": "#713a9c"
+      },
+      {
+        "type": "color",
+        "id": "color_3151e3c",
+        "label": "Color 3151e3c",
+        "default": "#1e1e1e"
+      },
+      {
+        "type": "color",
+        "id": "color_n8dbdba5",
+        "label": "Color n8dbdba5",
+        "default": "rgba(30, 30, 30, 0)"
+      },
+      {
+        "type": "color",
+        "id": "color_4f10aa3b",
+        "label": "Color 4f10aa3b",
+        "default": "#43b0f6"
+      },
+      {
+        "type": "color",
+        "id": "color_n4d2dc8a",
+        "label": "Color n4d2dc8a",
+        "default": "#ffd54e"
+      },
+      {
+        "type": "color",
+        "id": "color_n5415791c",
+        "label": "Color n5415791c",
+        "default": "#f977cd"
+      },
+      {
+        "type": "color",
+        "id": "color_73c4854a",
+        "label": "Color 73c4854a",
+        "default": "#00359e"
+      },
+      {
+        "type": "color",
+        "id": "color_1e5b5b6b",
+        "label": "Color 1e5b5b6b",
+        "default": "#bb7aad"
+      },
+      {
+        "type": "color",
+        "id": "color_n651a35db",
+        "label": "Color n651a35db",
+        "default": "rgba(0, 0, 0, 0.05)"
+      },
+      {
+        "type": "color",
+        "id": "color_n4103bf4e",
+        "label": "Color n4103bf4e",
+        "default": "#686868"
+      },
+      {
+        "type": "color",
+        "id": "color_a2581ae",
+        "label": "Color a2581ae",
+        "default": "#6d6d6d"
+      },
+      {
+        "type": "color",
+        "id": "color_6b487e25",
+        "label": "Color 6b487e25",
+        "default": "#3d3d3d"
+      },
+      {
+        "type": "color",
+        "id": "color_24246032",
+        "label": "Color 24246032",
+        "default": "#bdbdbd"
+      },
+      {
+        "type": "color",
+        "id": "color_42e3cc3c",
+        "label": "Color 42e3cc3c",
+        "default": "#d8d8d8"
+      },
+      {
+        "type": "color",
+        "id": "color_21ac6bd",
+        "label": "Color 21ac6bd",
+        "default": "#aaa"
+      },
+      {
+        "type": "color",
+        "id": "color_n651a2e59",
+        "label": "Color n651a2e59",
+        "default": "rgba(0, 0, 0, 0.07)"
+      },
+      {
+        "type": "color",
+        "id": "color_n75f815d1",
+        "label": "Color n75f815d1",
+        "default": "#585858"
+      },
+      {
+        "type": "color",
+        "id": "color_1ec6f7df",
+        "label": "Color 1ec6f7df",
+        "default": "rgba(112, 73, 155, 0)"
+      },
+      {
+        "type": "color",
+        "id": "color_n10730333",
+        "label": "Color n10730333",
+        "default": "rgba(249, 119, 205, 0)"
+      },
+      {
+        "type": "color",
+        "id": "color_n5bbe0811",
+        "label": "Color n5bbe0811",
+        "default": "#f3f3f5"
+      },
+      {
+        "type": "color",
+        "id": "color_3c0e97c8",
+        "label": "Color 3c0e97c8",
+        "default": "#d4d4d4"
+      },
+      {
+        "type": "color",
+        "id": "color_3e37aff0",
+        "label": "Color 3e37aff0",
+        "default": "#7beaef"
+      },
+      {
+        "type": "color",
+        "id": "color_n7696588",
+        "label": "Color n7696588",
+        "default": "#ff53ce"
+      },
+      {
+        "type": "color",
+        "id": "color_n4af34bc",
+        "label": "Color n4af34bc",
+        "default": "#ffecb8"
+      },
+      {
+        "type": "color",
+        "id": "color_n4d3c6db",
+        "label": "Color n4d3c6db",
+        "default": "#ffd359"
+      },
+      {
+        "type": "color",
+        "id": "color_4f4bb6d9",
+        "label": "Color 4f4bb6d9",
+        "default": "#43f6c3"
+      },
+      {
+        "type": "color",
+        "id": "color_n3b71ffa",
+        "label": "Color n3b71ffa",
+        "default": "#1a35ff"
+      },
+      {
+        "type": "color",
+        "id": "color_nfd37d45",
+        "label": "Color nfd37d45",
+        "default": "#fa7900"
+      },
+      {
+        "type": "color",
+        "id": "color_76aa190c",
+        "label": "Color 76aa190c",
+        "default": "#00ffe1"
+      },
+      {
+        "type": "color",
+        "id": "color_22dc3cc1",
+        "label": "Color 22dc3cc1",
+        "default": "#83dc52"
+      },
+      {
+        "type": "color",
+        "id": "color_536b6dc6",
+        "label": "Color 536b6dc6",
+        "default": "rgba(113, 58, 156, 0)"
+      },
+      {
+        "type": "color",
+        "id": "color_49f2d452",
+        "label": "Color 49f2d452",
+        "default": "rgba(56, 152, 236, 0)"
+      },
+      {
+        "type": "color",
+        "id": "color_446df70d",
+        "label": "Color 446df70d",
+        "default": "#d9a7ff"
+      },
+      {
+        "type": "color",
+        "id": "color_n2f40915a",
+        "label": "Color n2f40915a",
+        "default": "#b3ff01"
+      },
+      {
+        "type": "color",
+        "id": "color_n6518d8be",
+        "label": "Color n6518d8be",
+        "default": "rgba(0, 0, 0, 0.35)"
+      },
+      {
+        "type": "color",
+        "id": "color_450b0397",
+        "label": "Color 450b0397",
+        "default": "rgba(245, 247, 250, 0)"
+      },
+      {
+        "type": "color",
+        "id": "color_66a9ba95",
+        "label": "Color 66a9ba95",
+        "default": "rgba(26, 27, 31, 0.8)"
+      },
+      {
+        "type": "color",
+        "id": "color_n58b2c7e6",
+        "label": "Color n58b2c7e6",
+        "default": "#9c9c9c"
+      },
+      {
+        "type": "color",
+        "id": "color_6622b00a",
+        "label": "Color 6622b00a",
+        "default": "#3a4554"
+      },
+      {
+        "type": "color",
+        "id": "color_n20ca3525",
+        "label": "Color n20ca3525",
+        "default": "#212121"
+      },
+      {
+        "type": "color",
+        "id": "color_n77c7f2d",
+        "label": "Color n77c7f2d",
+        "default": "#ff2fd5"
+      },
+      {
+        "type": "color",
+        "id": "color_n6e88588e",
+        "label": "Color n6e88588e",
+        "default": "#dfdfdf"
+      },
+      {
+        "type": "color",
+        "id": "color_n5d1f2699",
+        "label": "Color n5d1f2699",
+        "default": "rgba(113, 58, 156, 0.72)"
+      },
+      {
+        "type": "color",
+        "id": "color_2061be9",
+        "label": "Color 2061be9",
+        "default": "#555"
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+<div class="section-other-products">
+  <div class="animate-circle-grow upper-right"></div>
+  <div class="page-padding">
+    <div class="padding-vertical">
+      <div class="container-large">
+        <div class="wrap-home-products">
+          <h2 class="h2-medium">{{ 'tn4181ab4c' | t }}</h2>
+          <div class="block-home-products">
+            <div class="w-dyn-list">
+              {% if section.blocks %}
+                <div role="list" class="collection-list {% if template == 'product' %} is-product {% endif %} w-dyn-items">
+                  {% for block in section.blocks %}
+                    <div
+                      id="item-{{ forloop.index0 }}"
+                      role="listitem"
+                      class="w-dyn-item product-hover-pineapple">
+                      <div data-w-id="item-{{ forloop.index0 }}" class="card-product">
+                        <div data-w-id="item-{{ forloop.index0 }}" class="box-product-text">
+                          <div class="text-size-regular text-color-purple caps-all">CATEGORY</div>
+                          <div class="text-size-large text-color-purple">{{ block.settings.product.title }}</div>
+                          <div class="text-size-medium text-color-purple">{{ block.settings.product.price | money }} USD</div>
+                          <a href="{{ block.settings.product.url }}" class="link-standard margin-top-10">CHOOSE</a>
+                          <a href="{{ block.settings.product.url }}" class="product-full-item-url w-inline-block"></a>
+                        </div>
+                        <img
+                          src="{{ block.settings.product.featured_image | img_url: '250x' }}"
+                          loading="lazy"
+                          alt="{{ block.settings.product.title }}"
+                          class="image-product">
+                        <img
+                          src="{{ 'pinaq-outline.png' | asset_url }}"
+                          loading="lazy"
+                          data-w-id="df32a352-39bc-2bcc-8d84-d37dcc78c13c"
+                          alt=""
+                          class="image-pineapple-outline">
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% else %}
+                <div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" class="animate-diamond">
+    <div class="animate-diamond-in"></div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Other Products",
+    "tag": "div",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "recommended-product",
+        "name": "Product",
+        "limit": 4,
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          }
+        ]
+      }
+    ]
+
+  }
+{% endschema %}
